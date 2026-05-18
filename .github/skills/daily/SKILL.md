@@ -1,5 +1,5 @@
 ---
-name: kpt-daily
+name: daily
 description: 日報を管理する。`start`で開始、`memo <text>`でメモ追記、`end`で所感を整理する
 ---
 
