@@ -8,10 +8,10 @@ disable-model-invocation: true
 
 # daily - 日報管理
 
-このワークスペースの `daily/YYYY-MM-DD.md` を日報ファイルとして操作する。
+`~/.claude/daily/YYYY-MM-DD.md` を日報ファイルとして操作する。プロジェクトをまたいでどこからでもメモできる。
 日付は実行時の今日の日付を使う。
 
-ユーザーの入力形式: `daily start [やること...]` / `daily memo <text>` / `daily end [やったこと...]`
+ユーザーの入力形式: `/daily start [やること...]` / `/daily memo <text>` / `/daily end [やったこと...]`
 
 ## いつ使うか
 
@@ -39,7 +39,7 @@ disable-model-invocation: true
 
 ## start
 
-1. 今日の日付で `daily/YYYY-MM-DD.md` が存在するか確認する
+1. 今日の日付で `~/.claude/daily/YYYY-MM-DD.md` が存在するか確認する
 2. 存在しない場合、以下の構造でファイルを作成する:
 
 ```
