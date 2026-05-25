@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 # kpt-weekly - 週次ふりかえり
 
-`~/.claude/daily/` の日報ファイルと `~/.claude/kpt-weekly/` の過去ふりかえりファイルを素材に、KPT ふりかえりを対話形式で進める。
+`~/.claude/kpt-daily/` の日報ファイルと `~/.claude/kpt-weekly/` の過去ふりかえりファイルを素材に、KPT ふりかえりを対話形式で進める。
 結果は `~/.claude/kpt-weekly/YYYY-MM-DD.md` に保存する。
 
 ## いつ使うか
@@ -41,7 +41,7 @@ disable-model-invocation: true
 
 ## フェーズ2：日報から Keep・Problem を抽出・深掘り
 
-1. 対象期間の日報ファイル（`~/.claude/daily/YYYY-MM-DD.md`）をすべて読み込む
+1. 対象期間の日報ファイル（`~/.claude/kpt-daily/YYYY-MM-DD.md`）をすべて読み込む
 2. 各日報の `## メモ`・`## やったこと`・`## 所感` から Keep・Problem の候補を抽出する:
    - **Keep 候補**: うまくいったこと、良い判断、スムーズだった作業、ポジティブなメモ
    - **Problem 候補**: 詰まり、指摘、迷い、違和感、時間がかかったこと

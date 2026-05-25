@@ -1,17 +1,17 @@
 ---
-name: daily
-description: スラッシュコマンド /daily 専用の日報スキル。startで今日のやることを登録し、memoで気づきを時刻付きで追記し、endでやったことと所感を整理する。
+name: kpt-daily
+description: スラッシュコマンド /kpt-daily 専用の日報スキル。startで今日のやることを登録し、memoで気づきを時刻付きで追記し、endでやったことと所感を整理する。
 argument-hint: start [やること...] | memo <メモ> | end [やったこと...]
 user-invocable: true
 disable-model-invocation: true
 ---
 
-# daily - 日報管理
+# kpt-daily - 日報管理
 
-`~/.claude/daily/YYYY-MM-DD.md` を日報ファイルとして操作する。プロジェクトをまたいでどこからでもメモできる。
+`~/.claude/kpt-daily/YYYY-MM-DD.md` を日報ファイルとして操作する。プロジェクトをまたいでどこからでもメモできる。
 日付は実行時の今日の日付を使う。
 
-ユーザーの入力形式: `/daily start [やること...]` / `/daily memo <text>` / `/daily end [やったこと...]`
+ユーザーの入力形式: `/kpt-daily start [やること...]` / `/kpt-daily memo <text>` / `/kpt-daily end [やったこと...]`
 
 ## いつ使うか
 
@@ -39,7 +39,7 @@ disable-model-invocation: true
 
 ## start
 
-1. 今日の日付で `~/.claude/daily/YYYY-MM-DD.md` が存在するか確認する
+1. 今日の日付で `~/.claude/kpt-daily/YYYY-MM-DD.md` が存在するか確認する
 2. 存在しない場合、以下の構造でファイルを作成する:
 
 ```
